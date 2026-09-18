@@ -1,0 +1,1 @@
+Aprés avoir taper la  dite commande on remarque nous avons l'apparition de 2034 lignes par rapport aux 6 lignes de départ cela est du au faite que le processeur rencontre <ctdio> par consequent il va remplacer cette ligne par le contenu des fichiers d'en-tète  nécessaires à cstdio 
