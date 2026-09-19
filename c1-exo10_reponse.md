@@ -1,1 +1,0 @@
-la différence entre l'avertissement et l'erreur est que l'avertissement n'arrète pas l'execution du programme tandis que lorsqu'il s'agit d'une erreur l'excution du programme est interrompu et le fichier source ne sera pas compilé et lancé 
