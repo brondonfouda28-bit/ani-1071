@@ -32,3 +32,25 @@ int main(){
    
 return 0;
  }
+
+
+ PS C:\Users\PAGE> ./pain.exe                      
+ecrire votre nombre: 0
+votre nombre est pair
+votre nombre est null
+PS C:\Users\PAGE> ./pain.exe                      
+ecrire votre nombre: -9
+votre nombre est impair
+votre nombre est n├®gatif
+votre nombre est divisible par trois
+PS C:\Users\PAGE> ./pain.exe
+ecrire votre nombre: 12
+votre nombre est pair
+votre nombre est positif
+votre nombre est divisible par trois
+PS C:\Users\PAGE> ./pain.exe                      
+ecrire votre nombre: 7
+votre nombre est impair
+votre nombre est positif
+votre nombre n'est pas divisible par trois
+PS C:\Users\PAGE> 
