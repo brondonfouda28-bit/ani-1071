@@ -8,10 +8,9 @@ int main(){
     while(a>0){
         a= a/10;
         b++;
-        
     }
-    printf("le nombre de chiffre est: %d\n", b);
-    return 0;
+   printf("le nombre de chiffre est %d\n",: b);
+   return 0;
 }
 
 PS C:\Users\PAGE> ./pain.exe
