@@ -574,7 +574,7 @@ t = 4.5 s   y = 0.89 m
 t = 4.5 s   y = 0.45 m
 t = 4.5 s   y = 0.01 m
 t = 4.5 s   y = -0.43 m
-PS C:\Users\PAGE> 
+PS C:\Users\PAGE> le temps d'impact est de : 4.5s
 
 #include <cstdio>
 
@@ -600,5 +600,5 @@ t = 1.0 s   y = 70.57 m
 t = 2.0 s   y = 41.14 m
 t = 3.0 s   y = 1.90 m
 t = 4.0 s   y = -47.15 m
-PS C:\Users\PAGE> 
+PS C:\Users\PAGE> le temps d'impact est de : 4.0s
 oui le temps d'impact change car plus la valeur de dt est petite plus les sauts le sont aussi et par conséquent la précision de la simulation est meilleur donc le temps va changer en fonction de la valeure de dt plus petit il sera plus le temps d'impact sera meilleur et va tourner autour 4.5s avec la formule t=((2h)/g)^1/2 an: t=((2*100)/9.81)^1/2  =4.515223641s
