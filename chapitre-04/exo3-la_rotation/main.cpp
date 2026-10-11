@@ -30,7 +30,7 @@ for(int i=0; i<n; i++){
 }
     tourner(t, n, k);
     for(int i=0; i<n; i++){
-        printf("%d", t[i]);
+        printf("%d\n", t[i]);
         if(i<n-1){
             printf(" ");
         }
