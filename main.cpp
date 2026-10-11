@@ -1,32 +1,36 @@
 #include<cstdio>
-void renvercer(int tab[], int n){
-    for(int i=1;i<n/2;i++){
-        int temp=tab[i];
-        tab[i]=tab[n-i-1];
-        tab[n-i-1]=temp;
+void initialiser(bool premier[], int n){
+    for(int i=0; i<n; i++){
+        premier[i]=true;
     }
-   
-} void afficher( int tab[],int n){
-    for(int i=0;i<n;i++){
-        printf("%d", tab[i]);
+    premier[0]=false;
+    premier[1]=false;
+   }
+   void cribler(bool premier[], int n){
+    for(int i=2; i<n; i++){
+        if(premier[i]){
+            for(int j=i*i; j<n; j+=i){
+                premier[j]=false;
+            }
+        }
+    }
+}
+void afficher(bool premier[], int n){
+    for(int i=0; i<n; i++){
+        if(premier[i]){
+            printf("%d\n", i);
+        }
     }
 }
 int main(){
-    int n=0;
-    int tab[1000];
-    int x;
-    while(n<1000 && scanf("%d", &x)==1){
-        if(x==0){
-            break;
-        }
-        tab[n]=x;
-        n++;
+    int n;
+    if(scanf("%d", &n)!=1 || n<2){
+        printf("AUCUN\n");
+        return 0;
     }
-    if (n==0){
-    printf("AUCUN\n");
-    }else{
-        renvercer(tab, n);
-        afficher(tab, n);
-    }
+    bool premier[n];
+    initialiser(premier, n);
+    cribler(premier, n);
+    afficher(premier, n);
     return 0;
 }
