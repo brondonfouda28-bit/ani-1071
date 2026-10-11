@@ -28,9 +28,7 @@ int main(){
     }
     long long result=trierParBulles(t, n);
     for(int i=0; i<n; i++){
-        printf("%d", t[i]);
-        if(i<n-1){
-            printf(" ");
+        printf("%d\n", t[i]);
         }
     }
     printf("\n%lld\n", result);
