@@ -40,9 +40,9 @@ int main(){
         return 0;
     }
     if(estPalindrome(s)){
-        printf("OUI\n");
+        printf("oui\n");
     }else{
-        printf("NON\n");
+        printf("non\n");
     }
     renverserTexte(s);
     printf("%s\n", s);
