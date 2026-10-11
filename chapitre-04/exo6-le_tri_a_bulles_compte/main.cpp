@@ -30,6 +30,6 @@ int main(){
     for(int i=0; i<n; i++){
         printf("%d\n", t[i]);
     }
-    printf("\n%lld\n", result);
+    printf("%lld\n", result);
     return 0;
 }
