@@ -1,0 +1,41 @@
+Sortie:
+PS C:\Users\PAGE> clang++ -Wall -Wextra echanger.cpp -o pain
+PS C:\Users\PAGE> ./pain                                    
+1 2
+2 1
+1 2
+1.500000 2.500000
+2.500000 1.500000
+1.500000 2.500000
+x y
+y x
+x y
+PS C:\Users\PAGE> 
+
+
+
+A l'appel:
+
+ echanger(&x, &y);
+    printf("%d %d\n", x, y);
+    echanger(x, y);
+
+printf("%f %f\n", c, d);
+    echanger(&c, &d);
+    printf("%f %f\n", c, d);
+    echange(c, d);
+    printf("%f %f\n", c, d);
+
+    printf("%c %c\n", e, f);
+    echanger(&e, &f);
+    printf("%c %c\n", e, f);
+    echange(e, f);
+    printf("%c %c\n", e, f)
+ 
+ Apres execution du programme, l'on remaque que le faite qu'il ait plusieurs fonctions echanger mais de type differents ne nuit en rien l'excution de notre programme ,
+ De plus , l'echange par reference nous apprend que l'on peut transmettre directement deux variables a une fonction  sans ecrire leurs adresses dans l'appel,
+ l'echange par pointeur lui nous apprend que l'on peut modifier les valeures originelles d'une fonction en lui transmettant les adresses de ces variables
+
+ce qui change: 
+comme changement nous avons : le type de variable, la maniere d'appeller une fonction, la maniere d'acceder au variable
+comme inchangé nous avons: le nom de la fonction et le resultat rechercher
