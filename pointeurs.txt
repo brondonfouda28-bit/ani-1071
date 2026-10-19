@@ -1,0 +1,14 @@
+Sortie:
+PS C:\Users\PAGE> clang++ -Wall -Wextra parpointeur.cpp -o pain
+PS C:\Users\PAGE> ./pain                                       
+56
+19
+5 4 3 2 1 
+7 7
+8 8
+PS C:\Users\PAGE> 
+
+Yaounde:
+le nombre de lettre est de: 8 8 le nombre de chiffre ne correspond pas a cause du (é) qui vaut 2 octets au lieu de 1
+
+pourquoi pas const: inverser ne peut pas contenir const*int car pour pouvoir fonctionner correctement la boucle a besoin de modifier le tableau
