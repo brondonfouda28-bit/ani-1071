@@ -1,0 +1,30 @@
+1 - Apres execution du programme les lignes suivantes seront les resultats attendus:
+5 9:car ici les valeurs affichées sont celle des variables pointées par *p et *q  à travers l'instruction printf("%d %d\n", *p,*q);
+9 9:car ici , l'instruction *p=*q , remplace la valeur que pointait *p par celle que pointe *q ; par consequent la valeure contenue dans la variable que pointe *p est remplacer par celle que pointe *q (a=b => a=9)
+9 1: car ici , l'instruction p=q, remplace la variable que pointe p par celle pointer par q par consequent p pointe maintenant b et ensuite *p=1; signifie b=1; par consequent apres l'instruction printf("%d %d\n", a , b) d'où a=9 et b=1
+
+
+PS C:\Users\PAGE> clang++ -Wall -Wextra signes.cpp -o pain
+PS C:\Users\PAGE> ./pain                                  
+5 9
+9 9
+9 1
+PS C:\Users\PAGE> 
+
+prediction:
+5 9:car ici les valeurs affichées sont celle des variables pointées par *p et *q  à travers l'instruction printf("%d %d\n", *p,*q);
+9 9:car ici , l'instruction *p=*q , remplace la valeur que pointait *p par celle que pointe *q ; par consequent la valeure contenue dans la variable que pointe *p est remplacer par celle que pointe *q (a=b => a=9)
+9 1: car ici , l'instruction p=q, remplace la variable que pointe p par celle pointer par q par consequent p pointe maintenant b et ensuite *p=1; signifie b=1; par consequent apres l'instruction printf("%d %d\n", a , b) d'où a=9 et b=1
+
+
+Obtenu:
+5 9
+9 9
+9 1
+
+ecart: 
+aucun
+aucun
+aucun
+
+p=q: elle change la remplace la variable pointée par p par celle pointée par q par consequent p qui pointait initialement pour a pointe desormais pour b; 
